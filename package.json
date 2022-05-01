@@ -4,7 +4,7 @@
   "description": "Code Challenge Project. Week 4. LaunchX",
   "main": "index.js",
   "scripts": {
-    "testw": "jest --env=node"
+    "test": "jest --env=node"
   },
   "repository": {
     "type": "git",
