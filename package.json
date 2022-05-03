@@ -4,7 +4,9 @@
   "description": "Code Challenge Project. Week 4. LaunchX",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest"
+    "test": "jest --env=node",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/YonadabNP/LaunchX_Students#readme",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^28.0.3"
   },
   "dependencies": {
