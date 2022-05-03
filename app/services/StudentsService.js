@@ -13,7 +13,10 @@ class StudentsService {
         if (!filteredStudents) {
             return [];
         }
-        return filteredStudents;
+        const emailList = filteredStudents.map(
+            (student) => student.email
+        );
+        return emailList;
     }
 
     static getStudentsHavingCreditsGreaterThan(students, value) {
